@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.11">
-  <diagram name="Security" id="7_t-huLyqTZaK8C2pLEU">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.11" pages="2">
+  <diagram name="security" id="7_t-huLyqTZaK8C2pLEU">
     <mxGraphModel dx="1912" dy="1095" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -85,6 +85,68 @@
         </mxCell>
         <mxCell id="LIGulVqqEWgQpyWQHzmR-31" value="Authenticating Proxy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="835" y="740" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="x0eaguAkmw9nb1jd6ma5" name="tools">
+    <mxGraphModel dx="2008" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-1" value="k8s 관리 대시보드 (IDE)" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="540" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-10" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="120" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-9" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="120" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-2" value="K9s" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="135" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-3" value="Lens" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="185" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-4" value="Rancher" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="235" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-5" value="Octant" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="135" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-6" value="Portainer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="185" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-8" value="&lt;div&gt;Kubernetes&lt;/div&gt;&lt;div&gt;dashboard&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="235" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-21" value="정책 관리" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="680" y="80" width="540" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-22" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="120" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-23" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="120" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-24" value="Kyverno" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="135" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-25" value="OPA / Gatekeeper" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="185" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-26" value="NeuVector" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="235" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-27" value="Kube-score" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="135" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-28" value="K-Rail" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="185" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DrbGijEhrG7CVo1d8D9N-29" value="Polaris" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="235" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
