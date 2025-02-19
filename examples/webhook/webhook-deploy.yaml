@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webhook-server
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webhook-server
+  template:
+    metadata:
+      labels:
+        app: webhook-server
+    spec:
+      containers:
+        - name: webhook-server
+          image: docker.local/my-webhook:v3
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: webhook-certs
+              mountPath: "/etc/certs"
+              readOnly: true
+      volumes:
+        - name: webhook-certs
+          secret:
+            secretName: webhook-tls
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webhook-service
+  namespace: default
+spec:
+  ports:
+    - port: 443
+      targetPort: 8080
+  selector:
+    app: webhook-server
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: pod-mutation-webhook
+webhooks:
+  - name: add-label.example.com
+    clientConfig:
+      service:
+        name: webhook-service
+        namespace: default
+        path: "/mutate"
+      caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZWVENDQXoyZ0F3SUJBZ0lVQmsxY2hIbVYxWGlOQWVGOGhrSkM3VWY4dnEwd0RRWUpLb1pJaHZjTkFRRUwKQlFBd0pqRWtNQ0lHQTFVRUF3d2JkMlZpYUc5dmF5MXpaWEoyYVdObExtUmxabUYxYkhRdWMzWmpNQjRYRFRJMQpNREl4T1RBeU16VXlPVm9YRFRJMk1ESXhPVEF5TXpVeU9Wb3dKakVrTUNJR0ExVUVBd3diZDJWaWFHOXZheTF6ClpYSjJhV05sTG1SbFptRjFiSFF1YzNaak1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0MKQWdFQWl4a0ttbzZxMmhsTGI5VEsweWxjRm9PZmlHYnFrd2ZaSVdiNjYzWVFDdVVvS1FicGRiSWZ0UXYyMDZGaQprSW90WWdmY3hBOHF6aTVyang0bC9OeTNRWlVNdjhsRjBXdEVxdUF2ODAwQXA4WjFKNCtwc1p4QnR1dHozNGtOCmtTYXlxQ29tQ0d2QzBSUTI4YUJBSHZlRC9qQlVTMHh6N2ZZTDQrbUx2MzhMalFsb01kTmw1azBnUzcyR2wveisKOENmZ0hzOFlGa0xaazJrV1ZBZHhuTDZTUEJWT2VNSldFWllNaWozbENPRHorU0JaTVVyY0UvK1VZeVhQcXhQRgp4TENGdEJRdjVRYkIxcVdIcmprbVpjL3NCWks4ekp6aE10UjU4WUNnSHNERVRQTzBVS3ZyRVowYlMzY0E2QkV2Cm9LbGRzVkZsb2ZldEFxM2YrSndlOGFQR254VDhhaVhjY0lOakZFUVdwOVRBNTdWNzdFajI3bGxlbk1IUSszNUQKdlBaMzNQWjBaZWM4MmhDcG95ckxZbGI3R0NQRzNkdjdOSnVzNzFmam9EQm1kRThyVkNnWHFrbDdrekZaRFEvNQpPN0RabDNocGYzRDduTnpBcjI1RXFWVTliTkdDOW9maUtVNU10UTNDMUZodlZKRzcwdk5CWm8wNEM5QTJLSjY3Ck9CTzZud282UmRUd3hmZzJaUFFTSXdxd2hPU3VJYzZTUmlYVXVsNWIxMUpSQUh2N3VZejZ6amwxbGxxQWpZb1UKWERuejBUdXpHenZERDVwT01wN3BXQzlwZ1RVSkFweFl6TW5GYkxzVUVISE8rNjhhK0xhL3pLUkUxZzRPbmpKWgowM05KKzJ6cnMzdU1xdzZLK3dEbTY5UmZmNU1SNjhkV1VhU3EyOGFCSFBHYkZQMENBd0VBQWFON01Ia3dIUVlEClZSME9CQllFRkJQWXlpQW1vS05ZbXFiNnluVGFjMGZ5bUV5Vk1COEdBMVVkSXdRWU1CYUFGQlBZeWlBbW9LTlkKbXFiNnluVGFjMGZ5bUV5Vk1BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0pnWURWUjBSQkI4d0hZSWJkMlZpYUc5dgpheTF6WlhKMmFXTmxMbVJsWm1GMWJIUXVjM1pqTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElDQVFBTUY3RU9Kc2pNCmFaU3RJb3VjZG00c3NBSnl1b2ZBSEZXVXlLSnpycU1XMU5MLzZQaDBRRDUxenpmMkZZWFhSeWI2UFNuSldHYmMKWWFxWHF6Z2R1U0R2WHNNNDg0VzZvWnVNekpUdkF6SmxGRUNXV0R6YnBNU1ZCd3o3Nmc4WWJobmJxVi9oYXl5NwpNTTlkZnZMMzQvZ1lNOWt3bGpjYzV3eWdXTjdwSS8rQ1k4RGgrVzhKRGptbWlpVGtJS0VsSVgreDMzSXZzOE1XClNxNW1lTkFqdDJ2YnM1cTFWbzJLUk41S1hZSHZGelQyeDFhZmV5R08yMmc5b3FWMXQ4VmttZzYzUng2Vk1OWWMKVmNHSVFwN2x1b1lZMWY0RHVzTHFkRlFGR1NkbldFL2Z3bmtnSk1aTjlhUU9vbnFDa1NvZzJ6WXVsYTljRWh0WQpsZHd1aHR5RVRPenl2SThyUm42ZDVJUXUxSlFEYng3aFZaV2JUbGJmNGZWM0l5am92ZzdNUW5kU1RoelpZODFDClN3R2t6WmJhZjVDdGxCaXZaUUtFVWFzQ0JSZUZMUnk2VE1JcTRJM0ZuUnE0NzRXSmR5TVhnZnpGdVVydlJ1cG8KblNIeXF0WHlJa3ZGQ0FVZlN3RXFSYVQyTXZYV3R1UUxYSWJVU0VkSXI0VFFXZUJQdUdscXZrZ0lHMTNkdVF4NQpMMUVpK1FOMFNIOHhPYXhLcGRXbUFrR2tvU3l6ZFpOajB5VlY3ajFkUmI0ejhOSjNDQnBtQzV1Lyt4N1p4UWVVCnFTeDhCK1J5VmErdmR2c2JSZHNwSTNKbzV2QTFCQzV3bTBxS0VGUDBOSlJQQnVOck03N2ErQ1R1azByekhEQXQKNHFFS0h3aytBMlk0Sm4rdHNwZlFOSUdjRzdNM2M3ejFWQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    rules:
+      - operations: [ "CREATE" ]
+        apiGroups: [""]
+        apiVersions: ["v1"]
+        resources: ["pods"]
+    admissionReviewVersions: ["v1"]
+    sideEffects: None
+    timeoutSeconds: 5
+
