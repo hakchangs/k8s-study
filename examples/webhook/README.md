@@ -1,4 +1,6 @@
 # webhook 예제
+pod 생성시 환경변수 FOO=BAR 를 추가하는 예제를 만들어본다.
+
 
 ### **📌 빌드 & 실행 방법**
 **1. Docker 이미지 빌드**
@@ -36,5 +38,8 @@ kubectl apply -f webhook-deploy.yaml
 **3. 테스트**
 ```shell
 kubectl apply -f webhook-test.yaml
+
+# 환경변수가 잘 추가되었는지 확인한다.
+kubectl get pod test-pod -o yaml
 ```
 
