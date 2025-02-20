@@ -4,11 +4,56 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fSZZSS4SiFKnqKFC8Spe-2" value="&lt;div&gt;ResourcQuota&lt;/div&gt;&lt;div&gt;- 자원제한 정책&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="fSZZSS4SiFKnqKFC8Spe-2" value="&lt;div&gt;ResourcQuota&lt;/div&gt;&lt;div&gt;- 자원제한 정책&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fSZZSS4SiFKnqKFC8Spe-3" value="&lt;div&gt;LimitRange&lt;/div&gt;&lt;div&gt;- 오브젝트 단위&lt;br&gt;자원제한 정책&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="fSZZSS4SiFKnqKFC8Spe-3" value="&lt;div&gt;LimitRange&lt;/div&gt;&lt;div&gt;- 오브젝트 단위&lt;br&gt;자원제한 정책&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ccN6cRPvqJCKMk4Lk9yD-1" value="&lt;div&gt;ValidatingWebhook&lt;/div&gt;&lt;div&gt;Configuration&lt;/div&gt;&lt;div&gt;- 오브젝트 유효성 검증&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ccN6cRPvqJCKMk4Lk9yD-2" value="&lt;div&gt;MutatingAdmission&lt;/div&gt;&lt;div&gt;Webhook&lt;br&gt;&lt;/div&gt;&lt;div&gt;- 오브젝트 변경&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vMBVsrnKh8dhXmzO2cDZ-1" value="실무 적용 컨셉" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vMBVsrnKh8dhXmzO2cDZ-2" value="&lt;div&gt;중앙집중화된 관리&lt;/div&gt;&lt;div&gt;- 공통정책 강요&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-1" value="&lt;div&gt;GitOps&lt;/div&gt;&lt;div&gt;(ArgoCD)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-2" value="&lt;div&gt;모니터링&lt;/div&gt;&lt;div&gt;- 사후대응&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-3" value="&lt;div&gt;Grafana&lt;/div&gt;&lt;div&gt;(Prometheus)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-4" value="시각화 / 손쉬운 사용" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="vMBVsrnKh8dhXmzO2cDZ-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="620" as="sourcePoint" />
+            <mxPoint x="1050" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="05mSROgdi9J-tI_jI-TI-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="320" as="sourcePoint" />
+            <mxPoint x="810" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="05mSROgdi9J-tI_jI-TI-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="320" as="sourcePoint" />
+            <mxPoint x="810" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="05mSROgdi9J-tI_jI-TI-8" value="Kyverno" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="380" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
