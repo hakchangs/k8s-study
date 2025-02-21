@@ -73,11 +73,14 @@
         <mxCell id="qizLvxFRrf7U86Rmz3YI-5" value="네트워크" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="800" y="760" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-6" value="NetworkPolicy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-6" value="&lt;div&gt;트래픽 제어&lt;/div&gt;&lt;div&gt;- 방향제어, 양적제어?&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="760" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-7" value="네트워크" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-7" value="보안" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="800" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-1" value="&lt;div&gt;Admission Control&lt;/div&gt;&lt;div&gt;- RBAC&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="840" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
