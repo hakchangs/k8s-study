@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.14" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.14" pages="4">
   <diagram id="p6BHQ99s00-5LfU9aDg9" name="policy">
-    <mxGraphModel dx="2008" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -81,6 +81,30 @@
         </mxCell>
         <mxCell id="B0TPcTDD9qaar6QS9I_g-1" value="&lt;div&gt;Admission Control&lt;/div&gt;&lt;div&gt;- RBAC&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="840" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="320" as="sourcePoint" />
+            <mxPoint x="810" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="680" as="sourcePoint" />
+            <mxPoint x="810" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="680" as="sourcePoint" />
+            <mxPoint x="810" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-5" value="LimitRange" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="640" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-6" value="ResourceQuota" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="690" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -362,6 +386,134 @@
         </mxCell>
         <mxCell id="DrbGijEhrG7CVo1d8D9N-56" value="???" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="795" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9WiNOcA8WRs-ACC8QRTj" name="리소스 맵">
+    <mxGraphModel dx="1744" dy="2091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-1" value="모든 리소스 요소의 관계도 그리기." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-5" value="Node" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-7" value="Pod" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-8" value="Deployment" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-9" value="DaemonSet" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-10" value="StatefulSet" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-11" value="ReplicaSet" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-12" value="ReplicationController" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-13" value="Job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-14" value="CronJob" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-15" value="ConfigMap" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-16" value="Secret" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-17" value="ResourceQuota" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-18" value="LimitRange" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-19" value="&lt;div&gt;HorizontalPod&lt;/div&gt;&lt;div&gt;Autoscaler&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-20" value="&lt;div&gt;PodDisruption&lt;/div&gt;&lt;div&gt;Budget&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-21" value="PriorityClass" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-22" value="RuntimeClass" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-23" value="Lease" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-24" value="&lt;div&gt;MutatingWebhook&lt;/div&gt;&lt;div&gt;Configuration&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-25" value="&lt;div&gt;ValidatingWebhook&lt;/div&gt;&lt;div&gt;Configuration&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-26" value="Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-27" value="Endpoint" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-28" value="Ingress" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-29" value="IngressClass" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-30" value="NetworkPolicy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-31" value="PortForwarding" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-32" value="&lt;div&gt;PersistentVolume&lt;/div&gt;&lt;div&gt;Claim&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-33" value="&lt;div&gt;PersistentVolume&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-34" value="StorageClass" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-35" value="Namespace" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-36" value="Event" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-37" value="Chart" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-38" value="Release" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-39" value="ServiceAccount" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-40" value="ClusterRole" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-41" value="Role" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-42" value="&lt;div&gt;ClusterRole&lt;/div&gt;&lt;div&gt;Binding&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-43" value="&lt;div&gt;Role&lt;/div&gt;&lt;div&gt;Binding&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kzo5EqVNm-QoYlaiM_S2-44" value="&lt;div&gt;CustomResource&lt;/div&gt;&lt;div&gt;Definition&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1400" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
