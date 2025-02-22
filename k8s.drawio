@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.14" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0" version="26.0.15" pages="4">
   <diagram id="p6BHQ99s00-5LfU9aDg9" name="policy">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="2008" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,101 +10,125 @@
         <mxCell id="fSZZSS4SiFKnqKFC8Spe-3" value="&lt;div&gt;LimitRange&lt;/div&gt;&lt;div&gt;- 오브젝트 단위&lt;br&gt;자원제한 정책&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ccN6cRPvqJCKMk4Lk9yD-1" value="&lt;div&gt;ValidatingWebhook&lt;/div&gt;&lt;div&gt;Configuration&lt;/div&gt;&lt;div&gt;- 오브젝트 유효성 검증&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ccN6cRPvqJCKMk4Lk9yD-1" value="&lt;div&gt;ValidatingWebhook&lt;/div&gt;&lt;div&gt;Configuration&lt;/div&gt;&lt;div&gt;- 오브젝트 유효성 검증&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ccN6cRPvqJCKMk4Lk9yD-2" value="&lt;div&gt;MutatingAdmission&lt;/div&gt;&lt;div&gt;Webhook&lt;br&gt;&lt;/div&gt;&lt;div&gt;- 오브젝트 변경&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ccN6cRPvqJCKMk4Lk9yD-2" value="&lt;div&gt;MutatingAdmission&lt;/div&gt;&lt;div&gt;Webhook&lt;br&gt;&lt;/div&gt;&lt;div&gt;- 오브젝트 변경&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vMBVsrnKh8dhXmzO2cDZ-1" value="실무 적용 컨셉" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vMBVsrnKh8dhXmzO2cDZ-1" value="실무 적용 컨셉" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vMBVsrnKh8dhXmzO2cDZ-2" value="&lt;div&gt;중앙집중화된 관리&lt;/div&gt;&lt;div&gt;- 공통정책 강요&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vMBVsrnKh8dhXmzO2cDZ-2" value="&lt;div&gt;중앙집중화된 관리&lt;/div&gt;&lt;div&gt;- 공통정책 강요&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-1" value="&lt;div&gt;GitOps&lt;/div&gt;&lt;div&gt;(ArgoCD)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-1" value="&lt;div&gt;GitOps&lt;/div&gt;&lt;div&gt;(ArgoCD)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="280" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-2" value="&lt;div&gt;모니터링&lt;/div&gt;&lt;div&gt;- 사후대응&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-2" value="&lt;div&gt;모니터링&lt;/div&gt;&lt;div&gt;- 사후대응&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-3" value="&lt;div&gt;Grafana&lt;/div&gt;&lt;div&gt;(Prometheus)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-3" value="&lt;div&gt;Grafana&lt;/div&gt;&lt;div&gt;(Prometheus)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="330" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-4" value="시각화 / 손쉬운 사용" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-4" value="시각화 / 손쉬운 사용" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="vMBVsrnKh8dhXmzO2cDZ-2">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="vMBVsrnKh8dhXmzO2cDZ-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1000" y="620" as="sourcePoint" />
             <mxPoint x="1050" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="05mSROgdi9J-tI_jI-TI-2">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="05mSROgdi9J-tI_jI-TI-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="320" as="sourcePoint" />
             <mxPoint x="810" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="05mSROgdi9J-tI_jI-TI-4">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vMBVsrnKh8dhXmzO2cDZ-1" target="05mSROgdi9J-tI_jI-TI-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="320" as="sourcePoint" />
             <mxPoint x="810" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="05mSROgdi9J-tI_jI-TI-8" value="Kyverno" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="05mSROgdi9J-tI_jI-TI-8" value="Kyverno" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="380" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7b8D_ba1FecgUVMOKt8N-2" value="&lt;div&gt;&lt;b&gt;정책적용 사이클&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;개발 &amp;gt; 테스트 &amp;gt; 적용 &amp;gt; 모니터링&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="7b8D_ba1FecgUVMOKt8N-2" value="&lt;div&gt;&lt;b&gt;정책적용 사이클&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;개발 &amp;gt; 테스트 &amp;gt; 적용 &amp;gt; 모니터링&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="765" y="515" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-1" value="정책관리 대상" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-1" value="정책관리 대상" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-2" value="리소스" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-2" value="리소스" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-3" value="컴퓨팅 리소스&lt;br&gt;- cpu, memory" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-3" value="컴퓨팅 리소스&lt;br&gt;- cpu, memory" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="640" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-4" value="&lt;div&gt;저장소&lt;/div&gt;&lt;div&gt;- storage&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-4" value="&lt;div&gt;저장소&lt;/div&gt;&lt;div&gt;- storage&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="690" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-5" value="네트워크" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-5" value="네트워크" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="760" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-6" value="&lt;div&gt;트래픽 제어&lt;/div&gt;&lt;div&gt;- 방향제어, 양적제어?&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-6" value="&lt;div&gt;트래픽 제어&lt;/div&gt;&lt;div&gt;- 방향제어, 양적제어?&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="760" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qizLvxFRrf7U86Rmz3YI-7" value="보안" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qizLvxFRrf7U86Rmz3YI-7" value="보안" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="840" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B0TPcTDD9qaar6QS9I_g-1" value="&lt;div&gt;Admission Control&lt;/div&gt;&lt;div&gt;- RBAC&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-1" value="&lt;div&gt;Admission Control&lt;/div&gt;&lt;div&gt;- RBAC&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="840" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="B0TPcTDD9qaar6QS9I_g-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-2">
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-2" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="320" as="sourcePoint" />
             <mxPoint x="810" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="B0TPcTDD9qaar6QS9I_g-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-5">
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="680" as="sourcePoint" />
             <mxPoint x="810" y="680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="B0TPcTDD9qaar6QS9I_g-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-7">
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="qizLvxFRrf7U86Rmz3YI-1" target="qizLvxFRrf7U86Rmz3YI-7" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="680" as="sourcePoint" />
             <mxPoint x="810" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="B0TPcTDD9qaar6QS9I_g-5" value="LimitRange" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-5" value="LimitRange" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1120" y="640" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="B0TPcTDD9qaar6QS9I_g-6" value="ResourceQuota" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="B0TPcTDD9qaar6QS9I_g-6" value="ResourceQuota" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1120" y="690" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5xPUlaH6C5Awo5JNb8VG-1" value="Pod" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5xPUlaH6C5Awo5JNb8VG-2" value="Ingress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="345" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5xPUlaH6C5Awo5JNb8VG-3" value="Egress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="345" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5xPUlaH6C5Awo5JNb8VG-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5xPUlaH6C5Awo5JNb8VG-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1440" y="360" as="sourcePoint" />
+            <mxPoint x="1460" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5xPUlaH6C5Awo5JNb8VG-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="5xPUlaH6C5Awo5JNb8VG-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1690" y="359" as="sourcePoint" />
+            <mxPoint x="1760" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5xPUlaH6C5Awo5JNb8VG-6" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;NetworkPolicy&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;- 트래픽 차단규칙을 정의&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="410" width="150" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
