@@ -725,6 +725,9 @@
         <mxCell id="z3CsJSR-UTgoy8znMVeb-12" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;생각나는 요건을 정리해볼게&lt;br&gt;&lt;br&gt;- kube-apiserver 직접 호출을 막고 api 레이어를 통해 k8s 리소스 요청을 수행한다.&lt;br&gt;- api 레이어는 k8s 관리팀에서 관리하고, 그 외 개발자와 다른 팀에서는 api 레이어를 통해서만 k8s 리소스 생성/조회/변경/삭제 를 진행한다.&lt;br&gt;- 사용자인 개발자와 다른 팀에서는 api 접속 계정이 있어야 하며, 계정관리는 keycloak oidc 로 진행된다.&lt;br&gt;- 클러스터는 여러개이다.&lt;br&gt;- k8s core 리소스와 기본 리소스 외에도 CRD 인 kustomize, knative 도 접근가능해야 한다.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="3270" y="520" width="710" height="140" as="geometry" />
         </mxCell>
+        <mxCell id="z3CsJSR-UTgoy8znMVeb-13" value="보안 필터링" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2730" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
